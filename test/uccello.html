@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Che uccello sei</title>
+</head>
+<body>
+    <div>
+    <div>
+        <h1>Che uccello sei?</h1>
+        <p>Tutti almeno una volta ci siamo chiesti che uccello siamo. Fai questo test per scoprire la tua natura.</p>
+    </div>
+        <form id="formUtente">
+            <fieldset>
+                <legend>Su di te</legend>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="uccello">Uccello preferito:</label><br>
+                <input type="text" id="uccello" name="uccello" required><br><br>
+                
+                <button type="submit">Inizia</button>
+            </fieldset>
+        </form>
+
+    <div id="primaDomanda" style="display: none;">
+        <form id="formDomanda1">
+            <fieldset>
+                <legend>Cosa fai per riempire il vuoto?</legend>
+
+                <input type="radio" id="opzione1a" name="vuoto" value="a">
+                <label for="opzione1a">Fumo una sigaretta</label><br>
+
+                <input type="radio" id="opzione1b" name="vuoto" value="b">
+                <label for="opzione1b">Svuoto la dispensa</label><br>
+
+                <input type="radio" id="opzione1c" name="vuoto" value="c">
+                <label for="opzione1c">Mi scarico Tinder</label><br>
+
+                <input type="radio" id="opzione1d" name="vuoto" value="d">
+                <label for="opzione1d">Vado a pesca</label><br>
+                <button type="submit">Avanti</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="secondaDomanda" style="display: none;">
+        <form id="formDomanda2">
+            <fieldset>
+                <legend>Cosa fai se qualcuno invade il tuo spazio?</legend>
+
+                <input type="radio" id="opzione2a" name="spazio" value="a">
+                <label for="opzione2a">Lo fisso minacciosamente</label><br>
+
+                <input type="radio" id="opzione2b" name="spazio" value="b">
+                <label for="opzione2b">Faccio finta di niente</label><br>
+
+                <input type="radio" id="opzione2c" name="spazio"value="c">
+                <label for="opzione2c">Gli chiedo di ballare insieme</label><br>
+
+                <input type="radio" id="opzione2d" name="spazio"value="d">
+                <label for="opzione2d">Urlo e arruffo le piume</label><br>
+                <button type="submit">Avanti</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="terzaDomanda" style="display: none;">
+        <form id="formDomanda3">
+            <fieldset>
+                <legend>Cos'hai sul tuo comodino?</legend>
+
+                <input type="radio" id="opzione3a" name="oggetto" value="a">
+                <label for="opzione3a">Un teschio ossuto</label><br>
+
+                <input type="radio" id="opzione3b" name="oggetto" value="b">
+                <label for="opzione3b">Un deodorante finito</label><br>
+
+                <input type="radio" id="opzione3c" name="oggetto"value="c">
+                <label for="opzione3c">Una mia foto</label><br>
+
+                <input type="radio" id="opzione3d" name="oggetto"value="d">
+                <label for="opzione3d">"Il vecchio e il mare"</label><br>
+                <button type="submit">Avanti</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="quartaDomanda" style="display: none;">
+        <form id="formDomanda4">
+            <fieldset>
+                <legend>Quale film ti ha formato?</legend>
+
+                <input type="radio" id="opzione4a" name="film" value="a">
+                <label for="opzione4a">"Joker" (2019)</label><br>
+
+                <input type="radio" id="opzione4b" name="film" value="b">
+                <label for="opzione4b">"Irreversible" (2002)</label><br>
+
+                <input type="radio" id="opzione4c" name="film"value="c">
+                <label for="opzione4c">"Mullholland Drive" (2001)"</label><br>
+
+                <input type="radio" id="opzione4d" name="film"value="d">
+                <label for="opzione4d">"The Lighthouse" (2019)</label><br>
+                <button type="submit">Avanti</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="quintaDomanda" style="display: none;">
+        <form id="formDomanda5">
+            <fieldset>
+                <legend>Cosa prendi al bar a colazione?</legend>
+
+                <input type="radio" id="opzione5a" name="colazione" value="a">
+                <label for="opzione5a">Un caffè amaro come la vita</label><br>
+
+                <input type="radio" id="opzione5b" name="colazione" value="b">
+                <label for="opzione5b">Una pizzetta con cipolla</label><br>
+
+                <input type="radio" id="opzione5c" name="colazione"value="c">
+                <label for="opzione5c">Chai Latte</label><br>
+
+                <input type="radio" id="opzione5d" name="colazione"value="d">
+                <label for="opzione5d">Un negroni</label><br>
+                <button type="submit">Risultati</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="risultati" style="display:none;">
+        <h2>Il tuo uccello è...</h2>
+        <p id="testoRisultato"></p>
+    </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
